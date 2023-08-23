@@ -42,7 +42,7 @@ public class CadastroBDTeste {
     }
 
     public void AlterarPessoaFisica() throws SQLException, ClassNotFoundException {
-        PessoaFisica pessoa = pfDao.getPessoa(19);
+        PessoaFisica pessoa = pfDao.getPessoa(2);
         pessoa.setEmail("sirius@riachosul.com");
         pessoa.setCpf("77777777777");
         pfDao.alterar(pessoa);
@@ -56,7 +56,7 @@ public class CadastroBDTeste {
     }
 
     public void ExcluirPessoaFisica() throws SQLException, ClassNotFoundException {
-        PessoaFisica pessoa = pfDao.getPessoa(19);
+        PessoaFisica pessoa = pfDao.getPessoa(22);
         pfDao.excluir(pessoa);
     }
 
@@ -74,7 +74,7 @@ public class CadastroBDTeste {
     }
 
     public void AlterarPessoaJuridica() throws SQLException, ClassNotFoundException {
-        PessoaJuridica pessoa = pjDao.getPessoa(21);
+        PessoaJuridica pessoa = pjDao.getPessoa(23);
         pessoa.setEmail("empresa@teste.com");
         pessoa.setCnpj("00000000000000");
         pjDao.alterar(pessoa);
@@ -88,7 +88,7 @@ public class CadastroBDTeste {
     }
 
     public void ExcluirPessoaJuridica() throws SQLException, ClassNotFoundException {
-        PessoaJuridica pessoa = pjDao.getPessoa(21);
+        PessoaJuridica pessoa = pjDao.getPessoa(23);
         pjDao.excluir(pessoa);
     }
 }
